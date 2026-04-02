@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div id="start-menu">
+    <header>
+        <h1>Title</h1>
+    </header>
+    <div id="start-buttons">
+        <button id="start-game">Start Game</button>
+        <button id="load-game">Load Game</button>
+        <button id="settings">Settings</button>
+    </div>
+   </div>
+    <div id="game">
+        <div id="text"></div>
+        <div id="choices"></div>
+    </div>
+
+    <div id="picture">
+
+    </div>
+    <aside class="sidebar collapsed">
+        <header class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="data:image/png;base64,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" alt="">
+            </a>
+            <button class="toggler sidebar-toggler">
+                <span class="material-symbols-rounded">
+                    chevron_left
+                </span>
+            </button>
+        </header>
+        <nav class="sidebar-nav">
+            <ul class="nav-list primary-nav">
+               <li class="nav-item">
+                <button id="statsB">
+                    <span class="nav-label">stats</span>
+                </button>
+               </li>
+
+               <li class="nav-item">
+                <button id="infoB">
+                    <span class="nav-label">info</span>
+                </button>
+               </li>
+
+               <li class="nav-item">
+                <button id="settingsB">
+                    <span class="nav-label">settings</span>
+                </button>
+               </li>
+                <li class="nav-item">
+                 <button id="saveB">
+                      <span class="nav-label">save</span>
+                 </button>
+            </ul>
+        </nav>
+    </aside>  
+    <div id="settings-menu">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+              <button id="regularF">Regular font</button>
+              <button id="MedievalSharp">Medieval Sharp font</button><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="info-menu"></div>
+    <div id="stats-menu">
+        <div id="stats"></div>
+    </div>
+    <div id="save-menu">
+        <button id="saveBtn">SAVE</button>
+        <button id="newBtn">NEW</button>
+        <button id="loadBtn">LOAD</button>
+        <button onclick="copySaveCode()">Copy Save</button>
+        <button onclick="enterSaveCode()">Load Save</button>
+    </div>
+    <script src="part1.js"></script>
+    <script src="script.js"></script>
+ 
+</body>
+</html>

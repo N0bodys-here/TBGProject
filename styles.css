@@ -367,7 +367,7 @@ body{
 
 
 .dropdown-content {
-    display: none; /* Hidden 
+    display: none;
     position: absolute;
     background-color: #1a1a1a;
     min-width: 200px;

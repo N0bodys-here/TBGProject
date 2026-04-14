@@ -52,6 +52,10 @@ const loadBtn = document.querySelector(`#load-game`);
 const settingsBtnStart = document.querySelector(`#settings`);
 const saveBtn = document.querySelector(`#saveB`);
 const saveMenu = document.querySelector(`#save-menu`);
+const fontDropdownBtn = document.getElementById("fontDropdownBtn");
+const fontContent = document.getElementById("myDropdown");
+const regularFontBtn = document.getElementById("regularF");
+const medievalFontBtn = document.getElementById("MedievalSharp");
 
 startBtn.addEventListener("click", () => {
     document.getElementById("start-menu").style.display = "none";
@@ -79,6 +83,25 @@ statsBtn.addEventListener("click", ()=> {
 saveBtn.addEventListener("click", ()=> {
     saveMenu.classList.toggle("uncollapse");
 });
+fontDropdownBtn.addEventListener("click", (e) => {
+    e.stopPropagation(); 
+    fontContent.classList.toggle("show");
+});
+regularFontBtn.addEventListener("click", () => {
+    document.body.style.family = "sans-serif";
+    document.getElementById("game").style.fontFamily = "sans-serif";
+});
+medievalFontBtn.addEventListener("click", () => {
+    document.body.style.fontFamily = "'MedievalSharp', cursive";
+    document.getElementById("game").style.fontFamily = "'MedievalSharp', cursive";
+});
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        if (fontContent.classList.contains('show')) {
+            fontContent.classList.remove('show');
+        }
+    }
+};
 function clamp(value) {
     return Math.max(MIN,Math.min(MAX,value));
 };

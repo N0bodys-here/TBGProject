@@ -56,9 +56,12 @@ const fontDropdownBtn = document.getElementById("fontDropdownBtn");
 const fontContent = document.getElementById("myDropdown");
 const regularFontBtn = document.getElementById("regularF");
 const medievalFontBtn = document.getElementById("MedievalSharp");
+const startMenu = document.querySelector(`#start-menu`);
+
 
 startBtn.addEventListener("click", () => {
-    document.getElementById("start-menu").style.display = "none";
+    startMenu.classList.toggle("collapsed");
+
 });
 
 settingsBtnStart.addEventListener("click", () => {

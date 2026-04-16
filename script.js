@@ -60,7 +60,7 @@ const startMenu = document.querySelector(`#start-menu`);
 
 
 startBtn.addEventListener("click", () => {
-    startMenu.classList.toggle("hidden");
+    startMenu.classList.add("hidden");
 
 });
 

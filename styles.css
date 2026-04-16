@@ -12,7 +12,7 @@ body{
     font-family: sans-serif;
 }
 
-#start-menu .uncollapsed{
+#start-menu .shown{
     top: 0;
     left: 0;
     position: fixed;
@@ -31,9 +31,10 @@ body{
     justify-content: center;
     align-items: center;
 }
-#start-menu .collapsed {
+#start-menu .hidden {
 	animation-name: menuAnimation;
 	Animation-duration: 5s;
+	animation-fill-mode: forwards;
 }
 @keyframes menuAnimation {
 	0% {filter: brightness(100%);}

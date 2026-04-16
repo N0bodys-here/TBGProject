@@ -38,7 +38,7 @@ body{
 @keyframes menuAnimation {
 	0% {filter: brightness(100%);}
 	50% {filter: brightness(0%);}
-	100% {display: None;}
+	100% {display: none;}
 }
 
 #start-menu header{

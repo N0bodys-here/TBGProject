@@ -33,8 +33,9 @@ body{
 }
 #start-menu.hidden {
 	animation-name: menuAnimation;
-	Animation-duration: 5s;
+	Animation-duration: 2s;
 	animation-fill-mode: forwards;
+	pointer-events: none;
 }
 @keyframes menuAnimation {
 	0% {filter: brightness(100%);}

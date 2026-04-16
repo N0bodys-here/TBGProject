@@ -401,6 +401,7 @@ body{
         right: 27vw;
         width: 45vw;
         margin: 10px;
+        height: calc(100vh - 20px);
     }
     #picture {
         position: absolute;

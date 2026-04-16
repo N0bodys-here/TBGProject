@@ -33,7 +33,7 @@ body{
 }
 #start-menu.hidden {
 	animation-name: menuAnimation;
-	animation-duration: 2s;
+	animation-duration: 4s;
 	animation-fill-mode: forwards;
 	pointer-events: none;
 }

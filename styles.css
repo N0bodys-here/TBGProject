@@ -12,7 +12,7 @@ body{
     font-family: sans-serif;
 }
 
-#start-menu .shown{
+#start-menu{
     top: 0;
     left: 0;
     position: fixed;

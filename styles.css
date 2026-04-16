@@ -406,6 +406,6 @@ body{
         position: absolute;
         right: 1vw;
         width: 25vw;
-        height: calc(100vw - 20px);
+        height: calc(100vh - 20px);
     }
 }

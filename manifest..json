@@ -3,8 +3,9 @@
   "name": "TBG Project",
   "icons": [
   ],
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#4b0082",
+  "background_color": "#121212",
+  "scope": "./"
 }

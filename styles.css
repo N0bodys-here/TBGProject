@@ -12,7 +12,7 @@ body{
     font-family: sans-serif;
 }
 
-#start-menu {
+#start-menu .uncollapsed{
     top: 0;
     left: 0;
     position: fixed;
@@ -41,7 +41,7 @@ body{
 	100% {display: none;}
 }
 
-#start-menu header{
+#start-menu header {
     margin-left: 5vh;
 }
 #start-buttons {

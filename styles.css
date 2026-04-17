@@ -69,9 +69,7 @@ body{
 #start-buttons button:hover {
     transform: scale(1.1)
 }
-#start-info {
-	display: none;
-}
+
 .sidebar{
     position: fixed;
     top: 0;

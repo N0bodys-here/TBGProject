@@ -68,7 +68,6 @@ const startMenu = document.querySelector(`#start-menu`);
 
 
 startBtn.addEventListener("click", () => {
-    alert("The JavaScript is working!");
     startMenu.classList.add("hidden");
 
 });

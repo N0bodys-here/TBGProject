@@ -41,8 +41,8 @@ body{
 	0% {filter: brightness(100%); opacity: 100%;}
 	25% {filter: brightness(75%); opacity: 100%;}
     50% {filter: brightness(25%); opacity: 100%;}
-	75% {filter: brightness(0%);opacity: 100%;}
-	100% {opacity: 0%;}
+	75% {filter: brightness(0%); opacity: 100%;}
+	100% {filter: brightness(0%); opacity: 0%;}
 }
 
 #start-menu header {

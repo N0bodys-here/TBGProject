@@ -124,35 +124,35 @@ function showScene(sceneId) {
         textElement.innerText = `scene not found.`;
         return;
     }
+    
+    textElement.innerHTML = 
+        typeof scene.text === "function"
+        ? scene.text() 
+            : scene.text;
+        choicesElement.innerHTML = ``;
 
-textElement.innerHTML = 
-typeof scene.text === "function"
-      ? scene.text()
-      : scene.text;
-choicesElement.innerHTML = ``;
-
-scene.choices.forEach(choice => {
-    if (choice.condition && !choice.condition())
-        return;
-    const button = document.createElement(`button`);
-    button.innerText = choice.text;
-    button.classList.add(`choice.btn`);
-    button.onclick = () => {
-        if (choice.effect) {
-            for (let key in choice.effect) {
-                if (typeof choice.effect[key] === "number") {
-                gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
-            }; else {
-                gameState[key] = choice.effect[key];
-            }
-            }
+    scene.choices.forEach(choice => {
+        if (choice.condition && !choice.condition())
+            return;
+        const button = document.createElement(`button`);
+        button.innerText = choice.text;
+        button.classList.add(`choice.btn`);
+        button.onclick = () => {
+            if (choice.effect) {
+                for (let key in choice.effect) {
+                    if (typeof choice.effect[key] === "number") {
+                        gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
+                    }; else {
+                        gameState[key] = choice.effect[key];
+                    }
+                }
+            };
+            showScene(choice.next);
         };
-        showScene(choice.next);
-    };
-    choicesElement.appendChild(button);
-});
-updateStats();
-saveGame(); 
+        choicesElement.appendChild(button);
+    });
+    updateStats();
+    saveGame(); 
 };
 
 function updateStats() {

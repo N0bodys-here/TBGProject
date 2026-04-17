@@ -221,8 +221,6 @@ function enterSaveCode() {
         }
     }
 }
-document.getElementById("saveBtn").onclick = saveGame;
-document.getElementById("loadBtn").onclick = loadGame;
 document.getElementById("newBtn").onclick = newGame;
 
 document.addEventListener("DOMContentLoaded", () => {

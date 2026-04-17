@@ -142,7 +142,7 @@ function showScene(sceneId) {
                 for (let key in choice.effect) {
                     if (typeof choice.effect[key] === "number") {
                         gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
-                    }; else {
+                    } else {
                         gameState[key] = choice.effect[key];
                     }
                 }

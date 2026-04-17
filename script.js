@@ -145,6 +145,7 @@ scene.choices.forEach(choice => {
             }; else {
                 gameState[key] = choice.effect[key];
             }
+            }
         };
         showScene(choice.next);
     };

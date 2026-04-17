@@ -55,7 +55,6 @@ const statsBtn = document.querySelector(`#statsB`);
 const settingsMenu = document.querySelector(`#settings-menu`);
 const infoMenu = document.querySelector(`#info-menu`);
 const statsMenu = document.querySelector(`#stats-menu`);
-const startBtn = document.querySelector(`#start-game`);
 const loadBtn = document.querySelector(`#load-game`);
 const settingsBtnStart = document.querySelector(`#settings`);
 const saveBtn = document.querySelector(`#saveB`);
@@ -64,13 +63,6 @@ const fontDropdownBtn = document.getElementById("fontDropdownBtn");
 const fontContent = document.getElementById("myDropdown");
 const regularFontBtn = document.getElementById("regularF");
 const medievalFontBtn = document.getElementById("MedievalSharp");
-const startMenu = document.querySelector(`#start-menu`);
-
-
-startBtn.addEventListener("click", () => {
-    startMenu.classList.add("hidden");
-
-});
 
 settingsBtnStart.addEventListener("click", () => {
      settingsMenu.classList.toggle("uncollapse");
@@ -237,6 +229,13 @@ document.getElementById("saveBtn").onclick = saveGame;
 document.getElementById("loadBtn").onclick = loadGame;
 
 document.addEventListener("DOMContentLoaded", () => {
+    const startBtn = document.querySelector(`#start-game`);
+    const startMenu = document.querySelector(`#start-menu`);
+    if (startBtn) {
+        startBtn.addEventListener("click", () => {
+            startMenu.classList.add("hidden");
+        });
+    }
     loadGame();
     if (!localStorage.getItem("gameState")) {
         showScene("sceneStart");

@@ -1,5 +1,6 @@
 let gameState = {
     currentScene: `sceneStart`,
+    playerGender: "neutral",
     traits: {
         curious: 0,
         creative: 0,
@@ -32,10 +33,17 @@ const corePersonalities = {
     (gameState.traits.anxious + gameState.traits.temperamental + gameState.traits.moody) / 3,
 };
 
+function p(type) {
+    const pronouns = {
+        masculine: { they: "he", them: "him", their: "his", person: "boy", monarch: "king" }, 
+        feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "queen" }, 
+        neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "monarch" }
+    };
+    return pronouns[gameState.playerGender][type] || type;
+};
+
 const MIN = -10;
 const MAX = 10;
-
-
 const textElement = document.getElementById(`text`);
 const choicesElement = document.getElementById(`choices`);
 const statsElement = document.getElementById(`stats`);
@@ -132,8 +140,10 @@ scene.choices.forEach(choice => {
     button.onclick = () => {
         if (choice.effect) {
             for (let key in choice.effect) {
-                gameState.traits[key] += choice.effect[key];
-                gameState.traits[key] = clamp(gameState.traits[key]);
+                if (typeof choice.effect[key] === "number") {
+                gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
+            } else {
+                gameState[key] = choice.effect[key];
             }
         }
         showScene(choice.next);

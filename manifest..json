@@ -1,3 +1,4 @@
+
 {
   "short_name": "TBG",
   "name": "TBG Project",
@@ -7,5 +8,6 @@
   "display": "standalone",
   "theme_color": "#4b0082",
   "background_color": "#121212",
-  "scope": "./"
+  "scope": "./",
+  "manifest_version": 3
 }

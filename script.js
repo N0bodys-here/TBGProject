@@ -99,7 +99,7 @@ fontDropdownBtn.addEventListener("click", (e) => {
     fontContent.classList.toggle("show");
 });
 regularFontBtn.addEventListener("click", () => {
-    document.body.style.family = "sans-serif";
+    document.body.style.fontFamily = "sans-serif";
     document.getElementById("game").style.fontFamily = "sans-serif";
 });
 medievalFontBtn.addEventListener("click", () => {

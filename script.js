@@ -117,7 +117,7 @@ function showScene(sceneId) {
         return;
     }
 
-textElement.innerText = 
+textElement.innerHTML = 
 typeof scene.text === "function"
       ? scene.text()
       : scene.text;

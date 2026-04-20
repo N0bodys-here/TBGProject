@@ -234,11 +234,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (startBtn) {
         startBtn.addEventListener("click", () => {
             startMenu.classList.add("hidden");
+            if (!localStorage.getItem("gameState")) {
+                showScene("sceneStart");
+            } else {
+                loadGame(); 
+            }
         });
     }
-    loadGame();
-    if (!gameState || !gameState.currentScene) {
-        showScene("sceneStart");
-    }
 });
-

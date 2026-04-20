@@ -429,3 +429,9 @@ body{
         height: calc(100vh - 20px);
     }
 }
+#loadBtn {
+	display: none;
+}
+#saveBtn {
+	display: none;
+}

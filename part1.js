@@ -46,7 +46,7 @@ start3: {
     choices: [
       {
         text: "Begin",
-        next: "sceneS1",
+        next: "scene1S",
       },
     ]
   },

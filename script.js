@@ -204,8 +204,7 @@ function newGame() {
         temperamental: 0,
         moody: 0,
     }
-};
-showScene(`sceneStart`);
+  };
 };
 function copySaveCode() {
     const code = btoa(JSON.stringify(gameState));

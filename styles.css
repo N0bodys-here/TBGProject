@@ -431,7 +431,21 @@ body{
 #save-menu.uncollapse #saveBtn {
 	display: none;
 }
-#save-menu.uncollapse button {
+#save-menu.uncollapse #newBtn {
+	color: blue;
+	border-style: ridge;
+    border-width: 5px;
+    border-color: purple;
+	background-color: black;
+}
+#save-menu.uncollapse #copySaveCode {
+	color: blue;
+	border-style: ridge;
+    border-width: 5px;
+    border-color: purple;
+	background-color: black;
+}
+#save-menu.uncollapse enterSaveCode {
 	color: blue;
 	border-style: ridge;
     border-width: 5px;

@@ -1,7 +1,7 @@
 let scenes = {}
 
 function scenesHolder() {
- const scenes = {
+ scenes = {
   sceneStart: {
    text: ` <span style="color:;">Hello</span> player <span style="color:;">welcome to the experience. First you’ll have to do a few things before you can begin but these choices should help make your experience much more enjoyable and personalized. You may continue.</span>`,
    choices: [

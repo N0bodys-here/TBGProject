@@ -437,4 +437,6 @@ body{
     border-width: 5px;
     border-color: purple;
 	background-color: black;
+	width: 2rem;
+	height: 1rem;
 }

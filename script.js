@@ -231,8 +231,9 @@ document.getElementById("loadBtn").onclick = loadGame;
 document.addEventListener("DOMContentLoaded", () => {
     const startBtn = document.querySelector(`#start-game`);
     const startMenu = document.querySelector(`#start-menu`);
-
-    scenesHolder();
+    if (typeof scenesHolder === function) {
+        scenesHolder();
+    }
     if (startBtn) {
         startBtn.addEventListener("click", () => {
             startMenu.classList.add("hidden");

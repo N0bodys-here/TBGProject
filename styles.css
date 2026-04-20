@@ -438,4 +438,6 @@ body{
     border-color: purple;
 	background-color: black;
 	min-width: 200px;
+	flex-direction: column;
+	gap: 20px;
 }

@@ -229,7 +229,7 @@ body{
     display: block !important;
     background-color: rgba(18, 18, 18, 0.95);
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
@@ -251,7 +251,7 @@ body{
     display: block !important;
     background-color: rgba(18, 18, 18, 0.95);
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
@@ -274,7 +274,7 @@ body{
     display: block !important;
     background-color: rgba(18, 18, 18, 0.95);
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
@@ -296,7 +296,7 @@ body{
     display: block !important;
     background-color: rgba(18, 18, 18, 0.95);
     position: fixed;
-    top: 0;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;

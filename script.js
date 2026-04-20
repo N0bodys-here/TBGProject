@@ -234,6 +234,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (typeof scenesHolder === function) {
         scenesHolder();
     }
+    else {
+        console.error(`idk`)
+    }
     if (startBtn) {
         startBtn.addEventListener("click", () => {
             startMenu.classList.add("hidden");

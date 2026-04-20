@@ -15,17 +15,17 @@ start1: {
       {
         text: "Masculine roles",
         next: "start2",
-        Effect: {playerGender: `masculine`}
+        effect: {playerGender: `masculine`}
       },
      {
         text: "Feminine roles",
         next: "start2",
-        Effect: {playerGender: `feminine`}
+        effect: {playerGender: `feminine`}
       },
      {
         text: "Neutral roles",
         next: "start2",
-        Effect: {playerGender: `neutral`}
+        effect: {playerGender: `neutral`}
       },
 
     ]

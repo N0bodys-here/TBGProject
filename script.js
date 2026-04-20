@@ -35,9 +35,9 @@ const corePersonalities = {
 
 function p(type) {
     const pronouns = {
-        masculine: { they: "he", them: "him", their: "his", person: "boy", monarch: "king" }, 
-        feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "queen" }, 
-        neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "monarch" }
+        masculine: { they: "he", them: "him", their: "his", person: "boy", monarch: "King" }, 
+        feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "Queen" }, 
+        neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "Monarch" }
     };
     return pronouns[gameState.playerGender][type] || type;
 };

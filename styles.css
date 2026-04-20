@@ -262,6 +262,8 @@ body{
     z-index: 400;
     overflow-y: auto;
     scroll-behavior: smooth;
+	flex-direction: column;
+	gap: 20px;
 }
 
 #save-menu {
@@ -438,6 +440,5 @@ body{
     border-color: purple;
 	background-color: black;
 	min-width: 200px;
-	flex-direction: column;
-	gap: 20px;
+	
 }

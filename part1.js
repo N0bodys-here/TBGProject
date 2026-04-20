@@ -1,3 +1,4 @@
+let scenes = {}
 
 function scenesHolder() {
  scenes = {

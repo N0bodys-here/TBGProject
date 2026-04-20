@@ -438,3 +438,10 @@ body{
     border-color: purple;
 	background-color: black;
 }
+#save-menu.uncollapse button[onclick] {
+	color: blue;
+	border-style: ridge;
+    border-width: 5px;
+    border-color: purple;
+	background-color: black;
+}

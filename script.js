@@ -128,7 +128,7 @@ function showScene(sceneId) {
             return;
         const button = document.createElement(`button`);
         button.innerText = choice.text;
-        button.classList.add(`choice.btn`);
+        button.classList.add(`choice btn`);
         button.onclick = () => {
             if (choice.effect) {
                 for (let key in choice.effect) {

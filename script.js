@@ -231,7 +231,7 @@ document.getElementById("loadBtn").onclick = loadGame;
 document.addEventListener("DOMContentLoaded", () => {
     const startBtn = document.querySelector(`#start-game`);
     const startMenu = document.querySelector(`#start-menu`);
-    if (typeof scenesHolder === function) {
+    if (typeof scenesHolder === "function") {
         scenesHolder();
     }
     if (startBtn) {

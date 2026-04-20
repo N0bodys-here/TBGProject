@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     loadGame();
-    if (!localStorage.getItem("gameState")) {
+    if (!gameState || !gameState.currentScene) {
         showScene("sceneStart");
     }
 });

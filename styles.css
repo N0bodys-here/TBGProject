@@ -429,9 +429,9 @@ body{
         height: calc(100vh - 20px);
     }
 }
-#loadBtn {
+#save-menu.uncollapse #loadBtn {
 	display: none;
 }
-#saveBtn {
+#save-menu.uncollapse #saveBtn {
 	display: none;
 }

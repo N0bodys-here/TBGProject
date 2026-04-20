@@ -187,6 +187,7 @@ function newGame() {
   localStorage.removeItem("gameState");
   gameState = {
     currentScene: `sceneStart`,
+    playerGender: "neutral",
     traits: {
         curious: 0,
         creative: 0,

@@ -1,4 +1,4 @@
-let scenes = {}
+let scenes = {};
 
 function scenesHolder() {
  scenes = {

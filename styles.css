@@ -231,7 +231,6 @@ body{
     position: fixed;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
     height: 50vh;
@@ -253,7 +252,6 @@ body{
     position: fixed;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
     height: 50vh;
@@ -276,7 +274,6 @@ body{
     position: fixed;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
     height: 50vh;
@@ -298,7 +295,6 @@ body{
     position: fixed;
     top: 10px;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 90vw;
     max-width: 600px;
     height: 50vh;

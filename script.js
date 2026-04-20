@@ -137,7 +137,7 @@ function showScene(sceneId) {
                         gameState[key] = choice.effect[key];
                     }
                 }
-            };
+            }
             showScene(choice.next);
         };
         choicesElement.appendChild(button);
@@ -205,7 +205,7 @@ function newGame() {
         moody: 0,
     }
 };
-showScene(`sceneStart`)
+showScene(`sceneStart`);
 };
 function copySaveCode() {
     const code = btoa(JSON.stringify(gameState));

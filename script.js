@@ -65,7 +65,7 @@ const regularFontBtn = document.getElementById("regularF");
 const medievalFontBtn = document.getElementById("MedievalSharp");
 
 settingsBtnStart.addEventListener("click", () => {
-    alert("idk") 
+    alert("idk");
     settingsMenu.classList.toggle("uncollapse");
 });
 loadBtn.addEventListener("click", () => {

@@ -3,7 +3,7 @@ let scenes = {};
 function scenesHolder() {
  scenes = {
   sceneStart: {
-   text: ` <span style="color:;">Hello</span> player <span style="color:;">welcome to the experience. First you’ll have to do a few things before you can begin but these choices should help make your experience much more enjoyable and personalized. You may continue.</span>`,
+   text: ` <span style="color: blue;">Hello</span> player <span style="color: blue;">welcome to the experience. First you’ll have to do a few things before you can begin but these choices should help make your experience much more enjoyable and personalized. You may continue.</span>`,
    choices: [
       {
         text: "Continue",
@@ -35,7 +35,7 @@ start1: {
   },
 
 start2: {
-    text: `<span style="color:;">${p('monarch')} detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
+    text: `<span style="color: blue;">${p('monarch')} detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
     choices: [
       {
         text: "Chosen Name",
@@ -45,7 +45,7 @@ start2: {
   },
 
 start3: {
-    text: `<span style="color:;">Good luck</span> player<span style="color:;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
+    text: `<span style="color: blue;">Good luck</span> player<span style="color: blue;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
     choices: [
       {
         text: "Begin",

@@ -217,7 +217,7 @@ function enterSaveCode() {
     if (code) {
         try {
             gameState = JSON.parse(atob(code));
-            saveGame(); // Puts it back into localStorage for convenience
+            saveGame();
             showScene(gameState.currentScene);
             alert("Game Loaded!");
         } catch (e) {

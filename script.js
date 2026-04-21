@@ -170,8 +170,9 @@ function showScene(sceneId) {
                 }
                 showScene(choice.next);
             };
+            choicesElement.appendChild(button);
+
         };
-        choicesElement.appendChild(button);
     });
     updateStats();
     saveGame(); 

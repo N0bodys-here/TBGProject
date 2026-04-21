@@ -56,6 +56,7 @@ start3: {
       {
         text: "Begin",
         next: "scene1S",
+        specialEvent: "disappear", 
       },
     ]
   },

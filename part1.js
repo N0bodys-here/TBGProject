@@ -13,7 +13,7 @@ function scenesHolder() {
   },
 
 start1: {
-    text: `<span style="color:blue;">Please choose your socially constructed sets of personality roles that will be assigned to you. This will decide how people refer to you as in pronouns, honorifics, and more. This will not decide your actions, you may decide your actions.  Note: this may affect specific outcomes or events in your experience.</span>`,
+    text: `<span style="color:blue;">Please choose your socially constructed sets of roles that will be assigned to you. This will decide how people refer to you as in pronouns, honorifics, and more. This will not decide your actions, you may decide your actions.  Note: this may affect specific outcomes or events in your experience.</span>`,
     choices: [
       {
         text: "Masculine roles",

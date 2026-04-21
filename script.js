@@ -82,6 +82,7 @@ neutralBtn.addEventListener("click", () => {
 });
 settingsBtnStart.addEventListener("click", () => {
     settingsMenu.classList.toggle("uncollapse");
+    alert(" idk") 
 });
 loadBtn.addEventListener("click", () => {
     saveMenu.classList.toggle("uncollapse");
@@ -150,8 +151,8 @@ function showScene(sceneId) {
             const confirmBtn = document.createElement("button");
             confirmBtn.innerText = "Confirm";
             confirmBtn.onclick = () => {
-            gameState.playerName = inputField.value || "Player";
-            showScene(choice.next);
+                gameState.playerName = inputField.value || "Player";
+                showScene(choice.next);
             };
             choicesElement.appendChild(inputField);
             choicesElement.appendChild(confirmBtn);
@@ -172,7 +173,7 @@ function showScene(sceneId) {
             };
             choicesElement.appendChild(button);
 
-        };
+        }
     });
     updateStats();
     saveGame(); 

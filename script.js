@@ -218,6 +218,10 @@ function newGame() {
         moody: 0,
     }
   };
+  showScene("sceneStart");
+  updateStats();
+  saveMenu.classList.remove("uncollapse");
+  document.getElementById("start-menu").classList.remove("hidden");
 };
 function copySaveCode() {
     const code = btoa(JSON.stringify(gameState));

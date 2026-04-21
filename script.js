@@ -167,7 +167,11 @@ function showScene(sceneId) {
                         }
                     }
                 }
-                showScene(choice.next);
+                if (choice.specialEvent === "disappear") {
+                    triggerDisappearAnimation(choice.next);
+                } else {
+                    showScene(choice.next);
+                };
             };
             choicesElement.appendChild(button);
 
@@ -177,6 +181,25 @@ function showScene(sceneId) {
     saveGame(); 
 };
 
+function triggerDisappearAnimation(nextSceneId) {
+    const gameContainer = document.getElementById("game");
+    const sidebar = document.querySelector(".sidebar");
+    
+    
+    gameContainer.classList.add("fade-out");
+    sidebar.classList.add("fade-out");
+
+    
+    document.body.classList.add("animate-bg");
+scene
+    setTimeout(() => {
+        gameContainer.classList.remove("fade-out");
+        sidebar.classList.remove("fade-out");
+        document.body.classList.remove("animate-bg");
+        
+        showScene(nextSceneId);
+    }, 3000);
+};
 function updateStats() {
   statsElement.innerText =
     `curious: ${gameState.traits.curious}

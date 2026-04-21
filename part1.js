@@ -35,7 +35,7 @@ start1: {
   },
 
 start2: {
-    text: `<span style="color: blue;">${p('monarch')} detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
+    text: `<span style="color: blue;">monarch detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
     choices: [
       {
         text: "Chosen Name",

@@ -181,23 +181,29 @@ function showScene(sceneId) {
     saveGame(); 
 };
 
-function triggerDisappearAnimation(nextSceneId) {
+function triggerTextCutscene(cutsceneText, nextSceneId) {
     const gameContainer = document.getElementById("game");
     const sidebar = document.querySelector(".sidebar");
     const picture = document.getElementById("picture");
+    const overlay = document.getElementById("cutscene-overlay");
+    const displayElement = document.getElementById("cutscene-text");
+    
     gameContainer.classList.add("fade-out");
     sidebar.classList.add("fade-out");
-    picture. classList.add(" fade-out");
-    document.body.classList.add("animate-bg");
+    picture.classList.add("picture");
     setTimeout(() => {
-        gameContainer.classList.remove("fade-out");
-        sidebar.classList.remove("fade-out");
-        picture.classList.romove("fade-out");
-        document.body.classList.remove("animate-bg");
-        
-        showScene(nextSceneId);
-    }, 3000);
-};
+        overlay.style.display = "flex";
+        typeWriter(displayElement, cutsceneText, () => {
+            setTimeout(() => {
+                overlay.style.display = "none";
+                gameContainer.classList.remove("fade-out");
+                sidebar.classList.remove("fade-out");
+                picture.classList.remove("fade-out");
+                showScene(nextSceneId);
+            }, 2000);
+        });
+    }, 1000);
+}
 function updateStats() {
   statsElement.innerText =
     `curious: ${gameState.traits.curious}

@@ -41,6 +41,10 @@ start2: {
         text: "Chosen Name",
         next: "start3",
       },
+     {
+        input: "Name",
+        next: "start3",
+      },
     ]
   },
 

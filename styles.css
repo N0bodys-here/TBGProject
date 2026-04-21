@@ -442,3 +442,10 @@ body{
 	min-width: 200px;
 	
 }
+.name-input-inline {
+	color: blue;
+	border-style: ridge;
+    border-width: 5px;
+    border-color: purple;
+	background-color: black;
+}

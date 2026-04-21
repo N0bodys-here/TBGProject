@@ -184,12 +184,15 @@ function showScene(sceneId) {
 function triggerDisappearAnimation(nextSceneId) {
     const gameContainer = document.getElementById("game");
     const sidebar = document.querySelector(".sidebar");
+    const picture = document.getElementById("picture");
     gameContainer.classList.add("fade-out");
     sidebar.classList.add("fade-out");
+    picture. classList.add(" fade-out");
     document.body.classList.add("animate-bg");
     setTimeout(() => {
         gameContainer.classList.remove("fade-out");
         sidebar.classList.remove("fade-out");
+        picture.classList.romove("fade-out");
         document.body.classList.remove("animate-bg");
         
         showScene(nextSceneId);

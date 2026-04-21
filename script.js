@@ -1,6 +1,7 @@
 let gameState = {
     currentScene: `sceneStart`,
     playerGender: "neutral",
+    playerName: "Player",
     traits: {
         curious: 0,
         creative: 0,
@@ -141,19 +142,34 @@ function showScene(sceneId) {
     scene.choices.forEach(choice => {
         if (choice.condition && !choice.condition())
             return;
-        const button = document.createElement(`button`);
-        button.innerText = choice.text;
-        button.onclick = () => {
-            if (choice.effect) {
-                for (let key in choice.effect) {
-                    if (typeof choice.effect[key] === "number") {
-                        gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
-                    } else {
-                        gameState[key] = choice.effect[key];
+        if (choice.input) {
+            const inputField = document.createElement("input");
+            inputField.type = "text";
+            inputField.placeholder = "Enter name...";
+            inputField.classList.add("name-input-inline");
+            const confirmBtn = document.createElement("button");
+            confirmBtn.innerText = "Confirm";
+            confirmBtn.onclick = () => {
+            gameState.playerName = inputField.value || "Player";
+            showScene(choice.next);
+            };
+            choicesElement.appendChild(inputField);
+            choicesElement.appendChild(confirmBtn);
+        } else {
+            const button = document.createElement(`button`);
+            button.innerText = choice.text;
+            button.onclick = () => {
+                if (choice.effect) {
+                    for (let key in choice.effect) {
+                        if (typeof choice.effect[key] === "number") {
+                            gameState.traits[key] = clamp((gameState.traits[key] || 0) + choice.effect[key]);
+                        } else {
+                            gameState[key] = choice.effect[key];
+                        }
                     }
                 }
-            }
-            showScene(choice.next);
+                showScene(choice.next);
+            };
         };
         choicesElement.appendChild(button);
     });
@@ -203,6 +219,7 @@ function newGame() {
   gameState = {
     currentScene: `sceneStart`,
     playerGender: "neutral",
+    playerName: "Player",
     traits: {
         curious: 0,
         creative: 0,

@@ -68,7 +68,7 @@ const femBtn = document.getElementById("femBtn");
 const neutralBtn = document.getElementById("neutralBtn");
 
 mascBtn.addEventListener("click", () => {
-    gameState.playerGender = "masculine"
+    {playerGender: `masculine`}
 });
 femBtn.addEventListener("click", () => {
     gameState.playerGender = "feminine"

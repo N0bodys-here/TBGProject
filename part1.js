@@ -18,17 +18,17 @@ start1: {
       {
         text: "Masculine roles",
         next: "start2",
-        effect: {socialRoles: `masculine`}
+        effect: {socialRoles: "masculine"}
       },
      {
         text: "Feminine roles",
         next: "start2",
-        effect: {socialRoles: `feminine`}
+        effect: {socialRoles: "feminine"}
       },
      {
         text: "Neutral roles",
         next: "start2",
-        effect: {socialRoles: `neutral`}
+        effect: {socialRoles: "neutral"}
       },
 
     ]

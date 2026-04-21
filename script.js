@@ -63,9 +63,9 @@ const fontDropdownBtn = document.getElementById("fontDropdownBtn");
 const fontContent = document.getElementById("myDropdown");
 const regularFontBtn = document.getElementById("regularF");
 const medievalFontBtn = document.getElementById("MedievalSharp");
-const mascBtn = document.getElementbyId("mascBtn");
-const femBtn = document.getElementbyId("femBtn");
-const neutralBtn = document.getElementbyId("neutralBtn");
+const mascBtn = document.getElementById("mascBtn");
+const femBtn = document.getElementById("femBtn");
+const neutralBtn = document.getElementById("neutralBtn");
 
 mascBtn.addEventListener("click", () => {
     gameState.playerGender = "masculine"

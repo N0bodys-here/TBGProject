@@ -179,7 +179,8 @@ function updateStats() {
      conscientiousness: ${corePersonalities.conscientiousness().toFixed(1)}
      extraversion: ${corePersonalities.extraversion().toFixed(1)}
      agreeableness: ${corePersonalities.agreeableness().toFixed(1)}
-     neuroticism: ${corePersonalities.neuroticism().toFixed(1)}`;
+     neuroticism: ${corePersonalities.neuroticism().toFixed(1)}
+     Gender: ${gameState.playerGender}`;
 }
 
 function saveGame() {

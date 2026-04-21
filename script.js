@@ -68,13 +68,16 @@ const femBtn = document.getElementById("femBtn");
 const neutralBtn = document.getElementById("neutralBtn");
 
 mascBtn.addEventListener("click", () => {
-    {playerGender: `masculine`}
+    gameState.playerGender = "masculine";
+    showScene(gameState.currentScene);
 });
 femBtn.addEventListener("click", () => {
-    gameState.playerGender = "feminine"
+    gameState.playerGender = "feminine";
+    showScene(gameState.currentScene);
 });
 neutralBtn.addEventListener("click", () => {
-    gameState.playerGender = "neutral"
+    gameState.playerGender = "neutral";
+    showScene(gameState.currentScene);
 });
 settingsBtnStart.addEventListener("click", () => {
     settingsMenu.classList.toggle("uncollapse");

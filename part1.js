@@ -3,7 +3,7 @@ let scenes = {};
 function scenesHolder() {
  scenes = {
   sceneStart: {
-   text: ` <span style="color: lightblue;">Hello</span> Player <span style="color: lightblue;">welcome to the experience. First you’ll have to do a few things before you can begin but these choices should help make your experience much more enjoyable and personalized. You may continue.</span>`,
+   text: ` <span style="color: #3a47d5;">Hello</span> Player <span style="color: #3a47d5;">welcome to the experience. First you’ll have to do a few things before you can begin but these choices should help make your experience much more enjoyable and personalized. You may continue.</span>`,
    choices: [
       {
         text: "Continue",
@@ -13,7 +13,7 @@ function scenesHolder() {
   },
 
 start1: {
-    text: `<span style="color: lightblue;">Please choose your socially constructed sets of roles that will be assigned to you. This will decide how people refer to you as in pronouns, honorifics, and more. This will not decide your actions, you may decide your actions.  Note: this may affect specific outcomes or events in your experience.</span>`,
+    text: `<span style="color: #3a47d5;">Please choose your socially constructed sets of roles that will be assigned to you. This will decide how people refer to you as in pronouns, honorifics, and more. This will not decide your actions, you may decide your actions.  Note: this may affect specific outcomes or events in your experience.</span>`,
     choices: [
       {
         text: "Masculine roles",
@@ -35,7 +35,7 @@ start1: {
   },
 
 start2: {
-    text: () => `<span style="color: lightblue;">${p('monarch')} detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
+    text: () => `<span style="color: #3a47d5;">${p('monarch')} detected… Now, please tell me the name you would like to be referred to or choose to have a name chosen for you. Please be aware others in the experience will not react to any unusual names you decide to call yourself thanks to the system but you will. So keep in mind if you want an enjoyable experience I suggest choosing a normal sounding name, whatever that may be for you.</span> `,
     choices: [
       {
         text: "Choose Name",
@@ -51,7 +51,7 @@ start2: {
   },
 
 start3: {
-    text: () => `<span style="color: lightblue;">Name Chosen: ${gameState.playerName}. Good luck</span> player<span style="color: lightblue;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
+    text: () => `<span style="color: #3a47d5;">Name Chosen: ${gameState.playerName}. Good luck</span> player<span style="color: #3a47d5;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
     choices: [
       {
         text: "Begin",

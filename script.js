@@ -20,6 +20,15 @@ let gameState = {
     }
 };
 
+function p(type) {
+    const pronouns = {
+        masculine: { they: "he", them: "him", their: "his", person: "boy", monarch: "King" }, 
+        feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "Queen" }, 
+        neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "Monarch" }
+    };
+    return pronouns[gameState.playerGender][type] || type;
+};
+
 const corePersonalities = {
     openness: () =>
     (gameState.traits.curious + gameState.traits.creative + gameState.traits.adventurous) / 3,
@@ -31,15 +40,6 @@ const corePersonalities = {
     (gameState.traits.trusting + gameState.traits.compassionate + gameState.traits.helpful) / 3,
     neuroticism: () =>
     (gameState.traits.anxious + gameState.traits.temperamental + gameState.traits.moody) / 3,
-};
-
-function p(type) {
-    const pronouns = {
-        masculine: { they: "he", them: "him", their: "his", person: "boy", monarch: "King" }, 
-        feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "Queen" }, 
-        neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "Monarch" }
-    };
-    return pronouns[gameState.playerGender][type] || type;
 };
 
 const MIN = -10;

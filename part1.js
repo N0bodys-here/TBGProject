@@ -51,7 +51,7 @@ start2: {
   },
 
 start3: {
-    text: () => `<span style="color: lightblue;">Name Chosen: ${gamestate.socialRoles}. Good luck</span> player<span style="color: lightblue;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
+    text: () => `<span style="color: lightblue;">Name Chosen: ${gameState.socialRoles}. Good luck</span> player<span style="color: lightblue;">, i will follow you in your experience but hopefully not interfere. Now, you may begin.</span>`,
     choices: [
       {
         text: "Begin",

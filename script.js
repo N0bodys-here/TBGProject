@@ -1,6 +1,6 @@
 let gameState = {
     currentScene: `sceneStart`,
-    playerGender: "neutral",
+    SocialRoles: "neutral",
     playerName: "Player",
     traits: {
         curious: 0,
@@ -27,7 +27,7 @@ function p(type) {
         feminine: { they: "she", them: "her", their: "her", person: "girl", monarch: "Queen" }, 
         neutral: { they: "they", them: "them", their: "their", person: "person", monarch: "Monarch" }
     };
-    return pronouns[gameState.playerGender][type] || type;
+    return pronouns[gameState.socialRoles][type] || type;
 };
 
 const corePersonalities = {
@@ -69,15 +69,15 @@ const femBtn = document.getElementById("femBtn");
 const neutralBtn = document.getElementById("neutralBtn");
 
 mascBtn.addEventListener("click", () => {
-    gameState.playerGender = "masculine";
+    gameState.socialRoles = "masculine";
     showScene(gameState.currentScene);
 });
 femBtn.addEventListener("click", () => {
-    gameState.playerGender = "feminine";
+    gameState.socialRoles = "feminine";
     showScene(gameState.currentScene);
 });
 neutralBtn.addEventListener("click", () => {
-    gameState.playerGender = "neutral";
+    gameState.socialRoles = "neutral";
     showScene(gameState.currentScene);
 });
 settingsBtnStart.addEventListener("click", () => {
@@ -141,8 +141,6 @@ function showScene(sceneId) {
         choicesElement.innerHTML = ``;
 
     scene.choices.forEach(choice => {
-        if (choice.condition && !choice.condition())
-            return;
         if (choice.input) {
             const inputField = document.createElement("input");
             inputField.type = "text";
@@ -201,7 +199,7 @@ function updateStats() {
      extraversion: ${corePersonalities.extraversion().toFixed(1)}
      agreeableness: ${corePersonalities.agreeableness().toFixed(1)}
      neuroticism: ${corePersonalities.neuroticism().toFixed(1)}
-     Gender: ${gameState.playerGender}`;
+     Social Roles: ${gameState.socialRoles}`;
 }
 
 function saveGame() {
@@ -220,7 +218,7 @@ function newGame() {
   localStorage.removeItem("gameState");
   gameState = {
     currentScene: `sceneStart`,
-    playerGender: "neutral",
+    socialRoles: "neutral",
     playerName: "Player",
     traits: {
         curious: 0,

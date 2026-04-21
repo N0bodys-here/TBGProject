@@ -449,3 +449,17 @@ body{
     border-color: purple;
 	background-color: black;
 }
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    pointer-events: none; 
+}
+@keyframes bg-pulse {
+    0% { background-color: #121212; }
+    50% { background-color: #4b0082; }
+    100% { background-color: #121212; }
+}
+
+.animate-bg {
+    animation: bg-pulse 3s infinite;
+}

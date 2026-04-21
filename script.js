@@ -1,6 +1,6 @@
 let gameState = {
     currentScene: `sceneStart`,
-    SocialRoles: "neutral",
+    socialRoles: "neutral",
     playerName: "Player",
     traits: {
         curious: 0,

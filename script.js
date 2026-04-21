@@ -63,7 +63,19 @@ const fontDropdownBtn = document.getElementById("fontDropdownBtn");
 const fontContent = document.getElementById("myDropdown");
 const regularFontBtn = document.getElementById("regularF");
 const medievalFontBtn = document.getElementById("MedievalSharp");
+const mascBtn = document.getElementbyId("mascBtn");
+const femBtn = document.getElementbyId("femBtn");
+const neutralBtn = document.getElementbyId("neutralBtn");
 
+mascBtn.addEventListener("click", () => {
+    gameState.playerGender = "masculine"
+});
+femBtn.addEventListener("click", () => {
+    gameState.playerGender = "feminine"
+});
+neutralBtn.addEventListener("click", () => {
+    gameState.playerGender = "neutral"
+});
 settingsBtnStart.addEventListener("click", () => {
     settingsMenu.classList.toggle("uncollapse");
 });

@@ -167,11 +167,11 @@ function showScene(sceneId) {
                         }
                     }
                 }
-                if (choice.specialEvent === "disappear") {
-                    triggerDisappearAnimation(choice.next);
+                if (choice.cutsceneEvent) {
+                    triggerTextCutscene(choice.cutsceneEvent, choice.next);
                 } else {
-                    showScene(choice.next);
-                };
+    showScene(choice.next);
+}
             };
             choicesElement.appendChild(button);
 

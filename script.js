@@ -221,14 +221,14 @@ function newGame() {
         moody: 0,
     }
   };
-  showScene("sceneStart");
-  updateStats();
-  saveMenu.classList.remove("uncollapse");
-  statsMenu.classList.remove("uncollapse");
-  infoMenu.classList.remove("uncollapse");
-  settingsMenu.classList.remove("uncollapse");
-  sidebar.classList.toggle("collapsed");
-  document.getElementById("start-menu").classList.remove("hidden");
+    showScene("sceneStart");
+    updateStats();
+    saveMenu.classList.remove("uncollapse");
+    statsMenu.classList.remove("uncollapse");
+    infoMenu.classList.remove("uncollapse");
+    settingsMenu.classList.remove("uncollapse");
+    sidebar.classList.toggle("collapsed");
+    document.getElementById("start-menu").classList.remove("hidden");
 };
 function copySaveCode() {
     const code = btoa(JSON.stringify(gameState));

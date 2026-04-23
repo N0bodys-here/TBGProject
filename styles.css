@@ -473,9 +473,9 @@ body{
     text-align: center;
     line-height: 1.6;
 	-webkit-animation: wiggle 0.2s 2;
-  	text-shadow:30px 13px rgba(246, 0, 153,0.8),
-             -38px -4px rgba(15, 210, 255,0.8),
-             -2px -4px rgba(255, 210, 0, 1);
+  	 text-shadow:1px 1px rgba(246, 0, 153,0.8),
+             -1px -1px rgba(15, 210, 255,0.8),
+             -1px 0px rgba(255, 210, 0, 1);
 }
 @-webkit-keyframes wiggle {
     0% { -webkit-transform: skewX(24deg); } 

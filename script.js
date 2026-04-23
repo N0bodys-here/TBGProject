@@ -206,6 +206,7 @@ function triggerTextCutscene(cutsceneText, nextSceneId) {
     gameContainer.classList.add("fade-out");
     sidebar.classList.add("fade-out");
     picture.classList.add("fade-out");
+    displayElement.classList.add("animate");
     setTimeout(() => {
         overlay.style.display = "flex";
         overlay.style.opacity = "1";
@@ -215,6 +216,7 @@ function triggerTextCutscene(cutsceneText, nextSceneId) {
                 gameContainer.classList.remove("fade-out");
                 sidebar.classList.remove("fade-out");
                 picture.classList.remove("fade-out");
+                displayElement.classList.remove("animate");
                 showScene(nextSceneId);
             }, 2000);
         });

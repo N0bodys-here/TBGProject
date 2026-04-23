@@ -180,7 +180,22 @@ function showScene(sceneId) {
     updateStats();
     saveGame(); 
 };
+function typeWriter(element, text, callback) {
+    element.innerHTML = "";
+    let i = 0;
+    const speed = 50; 
 
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        } else if (callback) {
+            callback(); 
+        }
+    }
+    type();
+}
 function triggerTextCutscene(cutsceneText, nextSceneId) {
     const gameContainer = document.getElementById("game");
     const sidebar = document.querySelector(".sidebar");
@@ -190,9 +205,10 @@ function triggerTextCutscene(cutsceneText, nextSceneId) {
     
     gameContainer.classList.add("fade-out");
     sidebar.classList.add("fade-out");
-    picture.classList.add("picture");
+    picture.classList.add("fade-out");
     setTimeout(() => {
         overlay.style.display = "flex";
+        overlay.style.opacity = "1";
         typeWriter(displayElement, cutsceneText, () => {
             setTimeout(() => {
                 overlay.style.display = "none";

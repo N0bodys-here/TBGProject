@@ -464,8 +464,7 @@ body{
 }
 #cutscene-text.animate  {
 	animation-name: wiggle;
-	animation-iteration-count: 150;
-	animation-duration: 0.1s;
+	animation-duration: 3s;
     text-shadow:30px 13px rgba(246, 0, 153,0.8),
              -38px -4px rgba(15, 210, 255,0.8),
              -2px -4px rgba(255, 210, 0, 1);
@@ -482,15 +481,26 @@ body{
              -1px 0px rgba(255, 210, 0, 1);
 }
 @keyframes wiggle {
-    0% { transform: skewX(24deg); } 
-    10% { transform: skewX(-8deg); }
-    20% { transform: skewX(55deg); }
-    30% { transform: skewX(-90deg); }
-    40% { transform: skewX(29deg); }
-    50% { transform: skewX(-90deg); }
-    60% { transform: skewX(3deg); }
-    70% { transform: skewX(-2deg); }
-    80% { transform: skewX(1deg); }
-    90% { transform: skewX(10deg); }
-    100% { transform: skewX(0deg); }
+    40% { transform: skewX(24deg); } 
+    42% { transform: skewX(-8deg); }
+    44% { transform: skewX(55deg); }
+    46% { transform: skewX(-90deg); }
+    48% { transform: skewX(29deg); }
+    40% { transform: skewX(-90deg); }
+    52% { transform: skewX(3deg); }
+    54% { transform: skewX(-2deg); }
+    56% { transform: skewX(1deg); }
+    58% { transform: skewX(10deg); }
+    60% { transform: skewX(0deg); }
+	70% { transform: skewX(24deg); } 
+    72% { transform: skewX(-8deg); }
+    74% { transform: skewX(55deg); }
+    76% { transform: skewX(-90deg); }
+    78% { transform: skewX(29deg); }
+    80% { transform: skewX(-90deg); }
+    82% { transform: skewX(3deg); }
+    84% { transform: skewX(-2deg); }
+    86% { transform: skewX(1deg); }
+    88% { transform: skewX(10deg); }
+    90% { transform: skewX(0deg); }
 }

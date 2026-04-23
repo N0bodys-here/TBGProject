@@ -8,6 +8,8 @@ function scenesHolder() {
       {
         text: "Continue",
         next: "start1",
+        cutsceneEvent: "Testing system", 
+
       },
     ]
   },
@@ -56,7 +58,6 @@ start3: {
       {
         text: "Begin",
         next: "scene1S",
-        cutsceneEvent: "Testing system", 
       },
     ]
   },

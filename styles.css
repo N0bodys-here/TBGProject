@@ -463,7 +463,7 @@ body{
     padding: 10%;
 }
 #cutscene-text.animate  {
-	-webkit-animation: wiggle 0.2s 2;
+	-webkit-animation: wiggle 3s 2;
     text-shadow:30px 13px rgba(246, 0, 153,0.8),
              -38px -4px rgba(15, 210, 255,0.8),
              -2px -4px rgba(255, 210, 0, 1);

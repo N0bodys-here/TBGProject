@@ -206,7 +206,7 @@ function triggerTextCutscene(cutsceneText, nextSceneId) {
     gameContainer.classList.add("fade-out");
     sidebar.classList.add("fade-out");
     picture.classList.add("fade-out");
-    setTimeout(displayElement.classList.add("animate"), 2000);
+    setTimeout(displayElement.classList.add("animate"), 3000);
     setTimeout(() => {
         overlay.style.display = "flex";
         overlay.style.opacity = "1";

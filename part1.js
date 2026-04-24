@@ -8,7 +8,7 @@ function scenesHolder() {
       {
         text: "Continue",
         next: "start1",
-        cutsceneEvent: "Testing system", 
+        cutsceneEvent: "Lets add a sentence to test how it looks with more words on the screen!", 
 
       },
     ]

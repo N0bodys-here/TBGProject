@@ -466,9 +466,6 @@ body{
 	animation-name: wiggle;
 	animation-iteration-count: 2;
 	animation-duration: 0.1s;
-    text-shadow:30px 13px rgba(246, 0, 153,0.8),
-             -38px -4px rgba(15, 210, 255,0.8),
-             -2px -4px rgba(255, 210, 0, 1);
 }
 
 #cutscene-text {
@@ -482,7 +479,10 @@ body{
              -1px 0px rgba(255, 210, 0, 1);
 }
 @keyframes wiggle {
-    0% { transform: skewX(24deg); } 
+    0% { transform: skewX(24deg);
+		text-shadow:30px 13px rgba(246, 0, 153,0.8),
+             -38px -4px rgba(15, 210, 255,0.8),
+             -2px -4px rgba(255, 210, 0, 1); } 
     10% { transform: skewX(-8deg); }
     20% { transform: skewX(55deg); }
     30% { transform: skewX(-90deg); }
@@ -492,6 +492,9 @@ body{
     70% { transform: skewX(-2deg); }
     80% { transform: skewX(1deg); }
     90% { transform: skewX(10deg); }
-    100% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); 
+		 text-shadow:1px 1px rgba(246, 0, 153,0.8),
+             -1px -1px rgba(15, 210, 255,0.8),
+             -1px 0px rgba(255, 210, 0, 1); }
 	
-}
+} 

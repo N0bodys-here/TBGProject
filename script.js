@@ -187,7 +187,7 @@ function typeWriter(element, text, callback) {
 
     function type() {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+             element.innerHTML = text.substring(0, i + 1);
             i++;
             setTimeout(type, speed);
         } else if (callback) {

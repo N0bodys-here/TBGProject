@@ -8,7 +8,7 @@ function scenesHolder() {
       {
         text: "Continue",
         next: "start1",
-        cutsceneEvent: "Lets add a sentence to test how it looks with more words on the screen!", 
+        cutsceneEvent: `<span style="color:red;">Hello</span> Player.<span style="color: red;"> I hope… You enjoy this experience. Stay safe.</span>`, 
 
       },
     ]

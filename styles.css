@@ -464,7 +464,7 @@ body{
 }
 #cutscene-text.animate  {
 	animation-name: wiggle;
-	animation-iteration-count: 30;
+	animation-iteration-count: 10;
 	animation-duration: 0.5s;
     text-shadow:30px 13px rgba(246, 0, 153,0.8),
              -38px -4px rgba(15, 210, 255,0.8),

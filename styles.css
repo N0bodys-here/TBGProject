@@ -19,7 +19,7 @@ body{
     background-color: rgb(18, 18, 18);
     height: 100vh;
     width: 100vw;
-    z-index: 300;
+    z-index: 400;
     transition: opacity 0.5s ease;
     font-family: "MedievalSharp", cursive;
     font-weight: 400;
@@ -76,7 +76,7 @@ body{
     background-color: rgb(18, 18, 18);
     height: 100vh;
     width: 100vw;
-    z-index: 250;
+    z-index: 300;
     transition: opacity 0.5s ease;
     font-family: "MedievalSharp", cursive;
     font-weight: 400;
@@ -256,7 +256,7 @@ body{
     border-style: ridge;
     border-width: 5px;
     border-color: purple;
-    z-index: 400;
+    z-index: 500;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
@@ -277,7 +277,7 @@ body{
     border-style: ridge;
     border-width: 5px;
     border-color: purple;
-    z-index: 400;
+    z-index: 500;
     overflow-y: auto;
     scroll-behavior: smooth;
 	flex-direction: column;
@@ -301,7 +301,7 @@ body{
     border-style: ridge;
     border-width: 5px;
     border-color: purple;
-    z-index: 400;
+    z-index: 500;
     overflow-y: auto;
     scroll-behavior: smooth;
 }
@@ -322,7 +322,7 @@ body{
     border-style: ridge;
     border-width: 5px;
     border-color: purple;
-    z-index: 400;
+    z-index: 500;
     overflow-y: auto;
     scroll-behavior: smooth;
     color: lightgray;

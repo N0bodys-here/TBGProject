@@ -1,4 +1,4 @@
-![](https://github-colored-text-fn3z.vercel.app/api/index?text=Hello there&color=FF0000&width=55) wanderer this was a project I had started making to learn js and story writting but when developing the story I started wanting to do more and represent my story in a better way. Therefore, i decided to stop working on this and make a new game; a diffrent type of game that is much more exciting to develop and will represent my stories emotions and moments better.
+![](https://github-colored-text-fn3z.vercel.app/api/index?text=Hellothere&color=FF0000&width=55) wanderer this was a project I had started making to learn js and story writting but when developing the story I started wanting to do more and represent my story in a better way. Therefore, i decided to stop working on this and make a new game; a diffrent type of game that is much more exciting to develop and will represent my stories emotions and moments better.
 
 Here you can look at this project if you wish to do so; although, its not very good.  
 Its my first attempt at js so dont expect much. The link is near the top right of the screen under About.

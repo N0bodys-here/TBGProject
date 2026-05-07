@@ -82,7 +82,6 @@ neutralBtn.addEventListener("click", () => {
 });
 settingsBtnStart.addEventListener("click", () => {
     settingsMenu.classList.toggle("uncollapse");
-    alert(" idk") 
 });
 loadBtn.addEventListener("click", () => {
     saveMenu.classList.toggle("uncollapse");

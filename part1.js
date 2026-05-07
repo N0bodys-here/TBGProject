@@ -44,9 +44,9 @@ start2: {
         input: true,
       },
      {
-        text: "Chosen Name",
+        text: "Chosen Name: Bellamy",
         next: "start3",
-        effect: {playerName: "Player"},
+        effect: {playerName: "Bellamy"},
       },
     ]
   },

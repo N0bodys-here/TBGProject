@@ -319,7 +319,6 @@ body{
     z-index: 100;
     margin: 20px auto;
     width: 90%;
-    max-width: 800px;
     padding: 2rem;
     min-height: 60vh;
     display: flex;
